@@ -1,5 +1,10 @@
 # RTA
 
+```bash
+docker build --tag wb72698/sklearn-flask-dockerv1 .
+docker run -p 8889:8889 -d --name mycontainer wb72698/sklearn-flask-dockerv1:latest
+```
+
 variables available:<br>
 fixed acidity (fa) [4.6-15.9]<br>
 volatile acidity (va) [0.12-1.58]<br>
