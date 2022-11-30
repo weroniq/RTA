@@ -4,7 +4,7 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 from sklearn import tree
-from sklearn.externals import joblib
+import joblib
 
 #create a flask
 app = Flask(__name__)

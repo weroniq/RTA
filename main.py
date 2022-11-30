@@ -15,7 +15,7 @@ print(min(data["quality"]))
 print(max(data["quality"]))
 
 # code data according to quality into good quality wines and bad quality wines
-data = data.replace({"quality": {3: -1, 4: -1, 5: -1}})
+data = data.replace({"quality": {3: 0, 4: 0, 5: 0}})
 data = data.replace({"quality": {6: 1, 7: 1, 8: 1}})
 
 # divide into explainable and explained variables
