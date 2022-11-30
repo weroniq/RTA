@@ -2,7 +2,6 @@ import joblib
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn import tree
-import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 import pickle
 
@@ -33,9 +32,6 @@ clf = clf.fit(X_train, Y_train)
 
 print(clf.get_depth())
 print(clf.get_n_leaves())
-#ax = plt.gca()
-#tree.plot_tree(clf, ax=ax)
-#plt.show()
 Y_train_pred = clf.predict(X_train)
 print(Y_train_pred)
 Y_val_pred = clf.predict(X_val)
@@ -54,9 +50,6 @@ Y_val_pred = clf.predict(X_val)
 print(Y_val_pred)
 print(f'Train score {accuracy_score(Y_train_pred, Y_train)}')
 print(f'Validation score {accuracy_score(Y_val_pred, Y_val)}')
-#ax = plt.gca()
-#tree.plot_tree(clf, ax=ax)
-#plt.show()
 
 # save the trained model
 saved_model = pickle.dumps(clf)

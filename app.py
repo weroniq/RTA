@@ -1,9 +1,6 @@
-import pickle
-from math import log10
 from flask import Flask
 from flask import request
 from flask import jsonify
-from sklearn import tree
 import joblib
 
 #create a flask
